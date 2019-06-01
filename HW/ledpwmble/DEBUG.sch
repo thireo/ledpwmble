@@ -1,0 +1,166 @@
+EESchema Schematic File Version 4
+LIBS:ledpwmble-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR044
+U 1 1 58890759
+P 3750 2700
+F 0 "#PWR044" H 3750 2550 50  0001 C CNN
+F 1 "VCC" H 3750 2850 50  0000 C CNN
+F 2 "" H 3750 2700 50  0000 C CNN
+F 3 "" H 3750 2700 50  0000 C CNN
+	1    3750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R19
+U 1 1 58890834
+P 3150 3125
+F 0 "R19" H 3180 3145 50  0000 L CNN
+F 1 "100kohm" V 3200 3225 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3150 3125 50  0001 C CNN
+F 3 "" H 3150 3125 50  0000 C CNN
+	1    3150 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 588908E2
+P 3350 2925
+F 0 "R20" H 3380 2945 50  0000 L CNN
+F 1 "100kohm" V 3400 3025 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3350 2925 50  0001 C CNN
+F 3 "" H 3350 2925 50  0000 C CNN
+	1    3350 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R21
+U 1 1 588908FF
+P 3550 3125
+F 0 "R21" H 3580 3145 50  0000 L CNN
+F 1 "100kohm" V 3600 3225 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3550 3125 50  0001 C CNN
+F 3 "" H 3550 3125 50  0000 C CNN
+	1    3550 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2750 3350 2750
+Connection ~ 3750 2750
+Connection ~ 3550 2750
+Connection ~ 3350 2750
+Wire Wire Line
+	2900 3500 3350 3500
+Text HLabel 2900 3600 0    60   Input ~ 0
+MCU_RESET
+Text HLabel 2900 3500 0    60   Input ~ 0
+SWCLK
+Text HLabel 2900 3400 0    60   Input ~ 0
+SWDIO
+Wire Wire Line
+	3550 3025 3550 2750
+Wire Wire Line
+	3350 2750 3350 2825
+Wire Wire Line
+	3150 2750 3150 3025
+Wire Wire Line
+	3150 3225 3150 3600
+Connection ~ 3150 3600
+Wire Wire Line
+	3350 3500 3350 3025
+$Comp
+L Device:C_Small C21
+U 1 1 58890FEC
+P 3250 3850
+F 0 "C21" H 3260 3920 50  0000 L CNN
+F 1 "100nF" H 3260 3770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3250 3850 50  0001 C CNN
+F 3 "" H 3250 3850 50  0000 C CNN
+	1    3250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3750 3250 3600
+$Comp
+L power:GND #PWR043
+U 1 1 58891062
+P 3250 4025
+F 0 "#PWR043" H 3250 3775 50  0001 C CNN
+F 1 "GND" H 3250 3875 50  0000 C CNN
+F 2 "" H 3250 4025 50  0000 C CNN
+F 3 "" H 3250 4025 50  0000 C CNN
+	1    3250 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4025 3250 3950
+Wire Wire Line
+	3550 3225 3550 3400
+Wire Wire Line
+	3750 2750 3750 2700
+Wire Wire Line
+	3550 2750 3750 2750
+Wire Wire Line
+	3350 2750 3550 2750
+Wire Wire Line
+	3150 3600 2900 3600
+Wire Wire Line
+	3250 3600 3150 3600
+Wire Wire Line
+	3550 3400 2900 3400
+$Comp
+L fpc_conn:FPC_6POS CON?
+U 1 1 5CF30BC9
+P 4200 3800
+F 0 "CON?" H 4278 4045 60  0000 L CNN
+F 1 "FPC_6POS" H 4278 3939 60  0000 L CNN
+F 2 "" H 4200 3800 60  0001 C CNN
+F 3 "" H 4200 3800 60  0001 C CNN
+	1    4200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3400 3750 3400
+Connection ~ 3550 3400
+Wire Wire Line
+	3750 2750 3750 3300
+Wire Wire Line
+	3350 3500 3750 3500
+Connection ~ 3350 3500
+Wire Wire Line
+	3250 3600 3750 3600
+Connection ~ 3250 3600
+Text HLabel 2900 3700 0    60   Input ~ 0
+UART_TX
+Wire Wire Line
+	2900 3700 3750 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5CF340D9
+P 3700 4025
+F 0 "#PWR?" H 3700 3775 50  0001 C CNN
+F 1 "GND" H 3705 3852 50  0000 C CNN
+F 2 "" H 3700 4025 50  0001 C CNN
+F 3 "" H 3700 4025 50  0001 C CNN
+	1    3700 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4025 3700 3800
+Wire Wire Line
+	3700 3800 3750 3800
+$EndSCHEMATC
