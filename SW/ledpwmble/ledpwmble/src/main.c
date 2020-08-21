@@ -33,7 +33,17 @@
 int main (void)
 {
 	system_init();
-	configure_tc();
+	//configure_tc();
+	//configure_tcc();
+	led_pwm_init();
+	init_TC3();
+	
+
+
+	while (1)
+	{	
+
+	}
 
 	/* Insert application code here, after the board has been initialized. */
 }

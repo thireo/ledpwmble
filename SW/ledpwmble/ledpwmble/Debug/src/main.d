@@ -119,9 +119,9 @@ src/main.d src/main.o: ../src/main.c ../src/asf.h \
  ../src/ASF/sam0/drivers/system/reset/reset_sam_d_r_h/reset.h \
  ../src/ASF/sam0/drivers/system/interrupt/system_interrupt.h \
  ../src/ASF/sam0/drivers/system/interrupt/system_interrupt_samd21/system_interrupt_features.h \
- ../src/ASF/sam0/drivers/tc/tc.h \
- ../src/ASF/sam0/drivers/tc/tc_interrupt.h \
- ../src/ASF/sam0/drivers/tc/tc.h ../src/ledpwm.h ../src/asf.h
+ ../src/ASF/sam0/drivers/tcc/tcc.h \
+ ../src/ASF/sam0/drivers/tcc/tcc_callback.h \
+ ../src/ASF/sam0/drivers/tcc/tcc.h ../src/ledpwm.h ../src/asf.h
 
 ../src/asf.h:
 
@@ -369,11 +369,11 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/ASF/sam0/drivers/system/interrupt/system_interrupt_samd21/system_interrupt_features.h:
 
-../src/ASF/sam0/drivers/tc/tc.h:
+../src/ASF/sam0/drivers/tcc/tcc.h:
 
-../src/ASF/sam0/drivers/tc/tc_interrupt.h:
+../src/ASF/sam0/drivers/tcc/tcc_callback.h:
 
-../src/ASF/sam0/drivers/tc/tc.h:
+../src/ASF/sam0/drivers/tcc/tcc.h:
 
 ../src/ledpwm.h:
 
